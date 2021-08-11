@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../edit-profile/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <img src="../uploads/<%- photo %>" alt="" class="website-user">
+        <div class="website-logo">
+            <a href="" class="">
+                <img src="../edit-profile/horizontal_on_white_by_logaster (1).png" alt="" class="website-logo-img">
+            </a>
+        </div>
+        <div class="action-nav-bar">
+            <button class="qr-scan-nav">Scan QR</button>
+            <img src="../edit-profile/menu.png" onclick="openmenu()" id="open" class="menu-icon">
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <ul>
+                <li><a href="">Edit Profile</a></li>
+                <li><a href="">Change Password</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Log Out</a></li>
+            </ul>
+            <img src="../edit-profile/cross.png" class="close" id="close" onclick="closemenu()">
+        </div>
+    </nav>
+    <div class="main">
+        <div class="edit-nav">
+            <button id="back"><i class="fas fa-arrow-left"></i>Back</button>
+            <button id="edit" onclick="window.location.href='/dashboard'">Save <i class="far fa-edit"></i></button>
+        </div>
+        <div class="profile">
+            <div class="user-img">
+                <img src="../uploads/<%- photo %>" alt="">
+                
+            </div>
+            <div class="user-info">
+                <table>
+                    <tr>
+                        <td class="tb-left">Name</td>
+                        <td><input type="text" placeholder="Guneet Singh"></td>
+                    </tr>
+                    <tr>
+                        <td class="tb-left">Username</td>
+                        <td><input type="text" placeholder="Guneet" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="tb-left">Mobile Number</td>
+                        <td><input type="text" placeholder="9999999999"></td>
+                    </tr>
+                    <tr>
+                        <td class="tb-left">DOB</td>
+                        <td>02-05-02</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>@Copyrights GoEasy.com Pvt Ltd
+                Student & Youth Service Platform
+                Team GoEasy.com Standard Service
+                Platform.
+                
+            </p>
+        </div>
+        <div class="Pages">
+            <h2>Pages</h2>
+            <ul>
+                <li> <a href="">Dashboard</a></li>
+                <li> <a href="">Split Bill</a> </li>
+                
+                <li><a href="">Change Password </a></li>
+                <li><a href=""> Help </a></li>
+            </ul>
+        </div>
+        <div class="connect">
+            <h2>Connect</h2>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
